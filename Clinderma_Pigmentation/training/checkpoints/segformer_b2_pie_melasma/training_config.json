@@ -1,0 +1,31 @@
+{
+  "run_name": "segformer_b2_pie_melasma",
+  "model": "nvidia/mit-b2",
+  "num_classes": 3,
+  "classes": [
+    "background",
+    "PIE",
+    "MELASMA"
+  ],
+  "image_size": 512,
+  "batch_size": 2,
+  "gradient_accumulation_steps": 4,
+  "effective_batch_size": 8,
+  "num_workers": 2,
+  "learning_rate": 6e-05,
+  "weight_decay": 0.01,
+  "max_epochs": 30,
+  "warmup_epochs": 2,
+  "ce_weight": 0.5,
+  "dice_weight": 0.5,
+  "seed": 42,
+  "device": "cuda",
+  "gpu": "Tesla T4",
+  "mixed_precision": true,
+  "dataset_root": "/content/clinderma_workspace/processed/pigmentation_segmentation",
+  "checkpoint_root": "/content/drive/MyDrive/Clinderma_Pigmentation/training/checkpoints/segformer_b2_pie_melasma",
+  "train_images": 831,
+  "valid_images": 123,
+  "test_images": 85,
+  "training_started": false
+}

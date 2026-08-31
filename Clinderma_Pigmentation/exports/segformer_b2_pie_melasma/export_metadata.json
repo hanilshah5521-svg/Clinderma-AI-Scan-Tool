@@ -1,0 +1,14 @@
+{
+  "model": "nvidia/mit-b2",
+  "classes": [
+    "background",
+    "PIE",
+    "MELASMA"
+  ],
+  "num_classes": 3,
+  "image_size": 512,
+  "best_epoch": 5,
+  "best_validation_dice": 0.664674455979068,
+  "test_mean_iou": 0.5851939497778127,
+  "test_mean_dice": 0.6903960307274833
+}

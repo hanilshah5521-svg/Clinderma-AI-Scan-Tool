@@ -1,0 +1,41 @@
+{
+  "project": "Clinderma_Pigmentation",
+  "workspace": "/content/clinderma_workspace",
+  "processed_dataset": "/content/clinderma_workspace/processed/pigmentation_segmentation",
+  "drive_root": "/content/drive/MyDrive/Clinderma_Pigmentation",
+  "training_root": "/content/drive/MyDrive/Clinderma_Pigmentation/training",
+  "checkpoint_root": "/content/drive/MyDrive/Clinderma_Pigmentation/training/checkpoints",
+  "result_root": "/content/drive/MyDrive/Clinderma_Pigmentation/training/results",
+  "log_root": "/content/drive/MyDrive/Clinderma_Pigmentation/training/logs",
+  "export_root": "/content/drive/MyDrive/Clinderma_Pigmentation/exports",
+  "device": "cuda",
+  "cuda_available": true,
+  "pytorch_version": "2.11.0+cu128",
+  "platform": "Linux-6.6.122+-x86_64-with-glibc2.35",
+  "python": "3.13.15",
+  "packages": {
+    "transformers": {
+      "installed": true,
+      "version": "5.15.0"
+    },
+    "PIL": {
+      "installed": true,
+      "version": "11.3.0"
+    },
+    "numpy": {
+      "installed": true,
+      "version": "2.1.3"
+    },
+    "pandas": {
+      "installed": true,
+      "version": "2.2.3"
+    }
+  },
+  "classes": {
+    "0": "background",
+    "1": "PIE",
+    "2": "MELASMA"
+  },
+  "num_classes": 3,
+  "training_started": false
+}

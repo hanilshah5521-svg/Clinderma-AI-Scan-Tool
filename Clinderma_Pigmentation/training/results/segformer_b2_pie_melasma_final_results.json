@@ -1,0 +1,53 @@
+{
+  "run_name": "segformer_b2_pie_melasma",
+  "model": "nvidia/mit-b2",
+  "best_validation_dice": 0.664674455979068,
+  "best_epoch": 5,
+  "test": {
+    "loss": 0.2948598366144092,
+    "mean_iou": 0.5851939497778127,
+    "mean_dice": 0.6903960307274833,
+    "class_iou": [
+      0.9792891853338391,
+      0.2322502570921065,
+      0.5440424069074924
+    ],
+    "class_dice": [
+      0.9895362361298066,
+      0.3769530673747655,
+      0.7046987886778777
+    ],
+    "confusion_matrix": [
+      [
+        21418354,
+        112132,
+        155291
+      ],
+      [
+        35071,
+        44717,
+        0
+      ],
+      [
+        150479,
+        618,
+        365578
+      ]
+    ]
+  },
+  "classes": [
+    "background",
+    "PIE",
+    "MELASMA"
+  ],
+  "dataset": {
+    "train": 831,
+    "valid": 123,
+    "test": 85
+  },
+  "gpu": "Tesla T4",
+  "image_size": 512,
+  "batch_size": 2,
+  "effective_batch_size": 8,
+  "timestamp": "2026-08-26 12:32:07"
+}

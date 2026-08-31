@@ -1,0 +1,45 @@
+{
+  "model": "nvidia/mit-b2",
+  "num_classes": 6,
+  "class_names": {
+    "0": "background",
+    "1": "PIH",
+    "2": "PIE",
+    "3": "SCAR",
+    "4": "DARK_SPOT",
+    "5": "MELASMA"
+  },
+  "image_size": 512,
+  "best_validation_dice": 0.3665953576564789,
+  "test_loss": 0.057367985447247825,
+  "test_miou": 0.30681923031806946,
+  "test_dice": 0.3635150194168091,
+  "test_class_iou": {
+    "background": 0.9803965091705322,
+    "PIH": 0.0,
+    "PIE": 0.335554838180542,
+    "SCAR": 0.0,
+    "DARK_SPOT": 0.0,
+    "MELASMA": 0.5249641537666321
+  },
+  "test_class_dice": {
+    "background": 0.9901012182235718,
+    "PIH": 0.0,
+    "PIE": 0.5024950504302979,
+    "SCAR": 0.0,
+    "DARK_SPOT": 0.0,
+    "MELASMA": 0.6884937882423401
+  },
+  "training_configuration": {
+    "batch_size": 2,
+    "gradient_accumulation": 4,
+    "effective_batch_size": 8,
+    "learning_rate": 6e-05,
+    "weight_decay": 0.01,
+    "max_epochs": 30,
+    "patience": 7,
+    "mixed_precision": true
+  },
+  "dataset": "/content/clinderma_workspace/processed/pigmentation_multisource_final",
+  "best_model": "/content/drive/MyDrive/Clinderma_Pigmentation/training/checkpoints/segformer_b2_multisource_v2/best_model.pt"
+}

@@ -1,0 +1,26 @@
+{
+  "run_name": "segformer_b2_multisource_v2",
+  "model": "nvidia/mit-b2",
+  "num_classes": 6,
+  "class_names": {
+    "0": "background",
+    "1": "PIH",
+    "2": "PIE",
+    "3": "SCAR",
+    "4": "DARK_SPOT",
+    "5": "MELASMA"
+  },
+  "image_size": 512,
+  "batch_size": 2,
+  "gradient_accumulation": 4,
+  "effective_batch_size": 8,
+  "num_workers": 2,
+  "max_epochs": 30,
+  "warmup_epochs": 2,
+  "learning_rate": 6e-05,
+  "weight_decay": 0.01,
+  "patience": 7,
+  "amp": true,
+  "seed": 42,
+  "dataset_root": "/content/clinderma_workspace/processed/pigmentation_multisource_final"
+}
